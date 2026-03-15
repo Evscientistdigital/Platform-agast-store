@@ -8,8 +8,11 @@
 </head>
 <body>
 
+<!-- Header -->
 <header>
-  <div class="logo">Agast Store</div>
+  <div class="logo-circle">
+    <span>AG</span>
+  </div>
   <input type="text" placeholder="Cari motor..." class="search">
   <div class="menu">
     <button class="btn login-btn" onclick="showLogin()">Login</button>
@@ -17,12 +20,31 @@
   </div>
 </header>
 
+<!-- Sidebar Testimoni -->
+<aside class="testimonial-sidebar">
+  <h3>Testimoni Pembeli</h3>
+  <div class="testimonial">
+    <p>"Motor Grand Astrea sangat nyaman dan irit!"</p>
+    <span>- Budi, Jakarta</span>
+  </div>
+  <div class="testimonial">
+    <p>"Pelayanan Agast Store cepat dan ramah."</p>
+    <span>- Sari, Bandung</span>
+  </div>
+  <div class="testimonial">
+    <p>"Harga bersaing, motor CB Nyeni Mas E mantap!"</p>
+    <span>- Andi, Surabaya</span>
+  </div>
+</aside>
+
 <main>
+  <!-- Hero Section -->
   <section class="hero">
     <h1>Selamat Datang di Agast Store</h1>
     <p>Temukan sepeda motor impianmu dengan harga terbaik!</p>
   </section>
 
+  <!-- Produk -->
   <section class="products-section">
     <h2>Produk Sepeda Motor</h2>
     <div class="products">
@@ -49,7 +71,7 @@
   </section>
 </main>
 
-<!-- CART MODAL -->
+<!-- Cart Modal -->
 <div id="cart-modal" class="modal">
   <div class="modal-content">
     <h2>Keranjang Belanja</h2>
@@ -60,7 +82,7 @@
   </div>
 </div>
 
-<!-- LOGIN MODAL -->
+<!-- Login Modal -->
 <div id="login-modal" class="modal">
   <div class="modal-content">
     <h2>Login</h2>
