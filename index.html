@@ -10,8 +10,9 @@
 
 <!-- Header -->
 <header>
+  <!-- Logo Bulat, bisa diganti dengan gambar -->
   <div class="logo-circle">
-    <span>AG</span>
+    <img src="logo.jpg" alt="Agast Store Logo">
   </div>
   <input type="text" placeholder="Cari motor..." class="search">
   <div class="menu">
@@ -20,30 +21,45 @@
   </div>
 </header>
 
-<!-- Hamburger Sidebar Testimoni -->
-<div class="testimonial-hamburger" onclick="toggleSidebar()">&#9776;</div>
+<!-- Hamburger Sidebar -->
+<div class="sidebar-hamburger" onclick="toggleSidebar()">&#9776;</div>
+<aside class="sidebar-panel" id="sidebar-panel">
+  <h3>Menu</h3>
+  <ul class="sidebar-menu">
+    <li onclick="showSection('testimonials')">Testimoni</li>
+    <li onclick="showSection('about')">Tentang Kami</li>
+  </ul>
 
-<aside class="testimonial-panel" id="testimonial-panel">
-  <h3>Testimoni Pembeli</h3>
-  <div class="testimonial">
-    <img src="buyer1.jpg" alt="Budi">
-    <div class="testimonial-text">
-      <p>"Motor Grand Astrea sangat nyaman dan irit!"</p>
-      <span>- Budi, Jakarta</span>
+  <!-- Section Konten -->
+  <div class="sidebar-content">
+    <div id="testimonials" class="sidebar-section">
+      <h4>Testimoni Pembeli</h4>
+      <div class="testimonial">
+        <img src="buyer1.jpg" alt="Budi">
+        <div>
+          <p>"Motor Grand Astrea sangat nyaman dan irit!"</p>
+          <span>- Budi, Jakarta</span>
+        </div>
+      </div>
+      <div class="testimonial">
+        <img src="buyer2.jpg" alt="Sari">
+        <div>
+          <p>"Pelayanan Agast Store cepat dan ramah."</p>
+          <span>- Sari, Bandung</span>
+        </div>
+      </div>
+      <div class="testimonial">
+        <img src="buyer3.jpg" alt="Andi">
+        <div>
+          <p>"Harga bersaing, motor CB Nyeni Mas E mantap!"</p>
+          <span>- Andi, Surabaya</span>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="testimonial">
-    <img src="buyer2.jpg" alt="Sari">
-    <div class="testimonial-text">
-      <p>"Pelayanan Agast Store cepat dan ramah."</p>
-      <span>- Sari, Bandung</span>
-    </div>
-  </div>
-  <div class="testimonial">
-    <img src="buyer3.jpg" alt="Andi">
-    <div class="testimonial-text">
-      <p>"Harga bersaing, motor CB Nyeni Mas E mantap!"</p>
-      <span>- Andi, Surabaya</span>
+
+    <div id="about" class="sidebar-section">
+      <h4>Tentang Agast Store</h4>
+      <p>Agast Store menyediakan berbagai sepeda motor berkualitas dengan harga terbaik.</p>
     </div>
   </div>
 </aside>
