@@ -42,7 +42,7 @@ function checkout(){
         return;
     }
 
-    let nomor = "6281394832151"; // format +62
+    let nomor = "6281394832151"; // WA format internasional
 
     let pesan = "Hallo Admin Agast Store\n\n";
     pesan += "Saya mau checkout:\n\n";
@@ -57,11 +57,10 @@ function checkout(){
     pesan += "\nTotal: Rp " + total;
     pesan += "\n\nTerima kasih.";
 
-    let url = "https://wa.me/" + nomor + "?text=" + encodeURIComponent(pesan);
+    // Buka WhatsApp di tab yang sama agar tidak diblokir pop-up
+    window.location.href = "https://wa.me/" + nomor + "?text=" + encodeURIComponent(pesan);
 
-    window.open(url,"_blank");
-
-    /* reset keranjang */
+    // Reset keranjang
     cart = [];
     localStorage.removeItem("cart");
     updateCart();
