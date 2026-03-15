@@ -4,7 +4,102 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Testimoni Pembeli - Agast Store</title>
-<link rel="stylesheet" href="style.css" />
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    margin: 20px;
+    text-align: center;
+    color: #333;
+  }
+  header {
+    margin-bottom: 20px;
+  }
+  header h1 {
+    margin-bottom: 5px;
+  }
+  header a {
+    text-decoration: none;
+    color: #0077cc;
+    font-size: 14px;
+  }
+
+  main {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+  }
+
+  /* Layout container untuk testimonial jadi 3 kolom sejajar */
+  main .testimonial {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 20px 15px 25px 15px;
+    border-radius: 10px;
+    width: 280px;
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px 40px;
+    min-height: 360px;
+  }
+  /* testimonial kedua style agak beda latar */
+  main .testimonial:nth-child(2) {
+    background-color: #222;
+  }
+  main .testimonial img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: -65px auto 15px auto;
+    display: block;
+    border: 5px solid #eee;
+    background: white;
+  }
+  main .testimonial strong {
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: block;
+    text-transform: uppercase;
+  }
+  main .stars {
+    font-size: 18px;
+    margin-bottom: 12px;
+    user-select: none;
+  }
+  /* Warna bintang */
+  main .stars.green {
+    color: #3cb371;
+  }
+  main .stars.yellow {
+    color: #ffcc00;
+  }
+  main .stars.red {
+    color: #d53e3e;
+  }
+  main p {
+    font-size: 12px;
+    line-height: 1.4;
+    font-style: italic;
+  }
+  main p::before {
+    content: "“";
+    font-size: 22px;
+    vertical-align: top;
+    color: #fff;
+    margin-right: 4px;
+  }
+  main p::after {
+    content: "”";
+    font-size: 22px;
+    vertical-align: bottom;
+    color: #fff;
+    margin-left: 4px;
+  }
+</style>
 </head>
 <body>
 
@@ -13,21 +108,26 @@
   <a href="index.html">← Kembali ke Beranda</a>
 </header>
 
-<main style="padding:20px; max-width:600px; margin:auto;">
+<main>
   <div class="testimonial">
-    <img src="buyer1.jpeg" alt="Budi" />
-    <div>
-      <p>"Motor Grand Astrea sangat nyaman dan irit!"</p>
-      <span>- pak nopal,rayap wesi </span>
-    </div>
+    <img src="buyer1.jpeg" alt="Buyer 1" />
+    <strong>Agas rayap wesi</strong>
+    <div class="stars green">★★★★★</div>
+    <p>P BALAPPPPPPPPPPPP.</p>
   </div>
 
   <div class="testimonial">
-    <img src="buyer2.jpg" alt="Sari" />
-    <div>
-      <p>"Pelayanan Agast Store cepat dan ramah."</p>
-      <span>- agas bakso, rayap bakso</span>
-    </div>
+    <img src="buyer2.jpg" alt="Buyer 2" />
+    <strong>TORU PAREREJO</strong>
+    <div class="stars yellow">★★★☆☆</div>
+    <p>motor e uglik2 lekkkkkkk.</p>
+  </div>
+
+  <div class="testimonial">
+    <img src="buyer3.jpg" alt="Buyer 3" />
+    <strong>TYAN BHLL</strong>
+    <div class="stars red">★☆☆☆☆</div>
+    <p>untuk motornya sangat nyaman bisa buat bonceng tiga.</p>
   </div>
 </main>
 
