@@ -47,10 +47,24 @@ document.getElementById("cart-modal").style.display="none";
 
 function checkout(){
 
-alert("Checkout berhasil!");
+if(cart.length === 0){
+alert("Keranjang kosong!");
+return;
+}
+
+let produk = cart.map(item => item.name).join(" atau ");
+
+let pesan = "Hallo saya mau checkout " + produk;
+
+let nomor = "6281394832151";
+
+let url = "https://wa.me/" + nomor + "?text=" + encodeURIComponent(pesan);
+
+window.open(url,"_blank");
+
+/* reset keranjang */
 
 cart=[];
-
 localStorage.removeItem("cart");
 
 updateCart();
