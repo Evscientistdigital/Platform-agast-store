@@ -20,31 +20,41 @@
   </div>
 </header>
 
-<!-- Sidebar Testimoni -->
-<aside class="testimonial-sidebar">
+<!-- Hamburger Sidebar Testimoni -->
+<div class="testimonial-hamburger" onclick="toggleSidebar()">&#9776;</div>
+
+<aside class="testimonial-panel" id="testimonial-panel">
   <h3>Testimoni Pembeli</h3>
   <div class="testimonial">
-    <p>"Motor Grand Astrea sangat nyaman dan irit!"</p>
-    <span>- Budi, Jakarta</span>
+    <img src="buyer1.jpg" alt="Budi">
+    <div class="testimonial-text">
+      <p>"Motor Grand Astrea sangat nyaman dan irit!"</p>
+      <span>- Budi, Jakarta</span>
+    </div>
   </div>
   <div class="testimonial">
-    <p>"Pelayanan Agast Store cepat dan ramah."</p>
-    <span>- Sari, Bandung</span>
+    <img src="buyer2.jpg" alt="Sari">
+    <div class="testimonial-text">
+      <p>"Pelayanan Agast Store cepat dan ramah."</p>
+      <span>- Sari, Bandung</span>
+    </div>
   </div>
   <div class="testimonial">
-    <p>"Harga bersaing, motor CB Nyeni Mas E mantap!"</p>
-    <span>- Andi, Surabaya</span>
+    <img src="buyer3.jpg" alt="Andi">
+    <div class="testimonial-text">
+      <p>"Harga bersaing, motor CB Nyeni Mas E mantap!"</p>
+      <span>- Andi, Surabaya</span>
+    </div>
   </div>
 </aside>
 
+<!-- Hero Section -->
 <main>
-  <!-- Hero Section -->
   <section class="hero">
     <h1>Selamat Datang di Agast Store</h1>
     <p>Temukan sepeda motor impianmu dengan harga terbaik!</p>
   </section>
 
-  <!-- Produk -->
   <section class="products-section">
     <h2>Produk Sepeda Motor</h2>
     <div class="products">
@@ -71,7 +81,7 @@
   </section>
 </main>
 
-<!-- Cart Modal -->
+<!-- CART MODAL -->
 <div id="cart-modal" class="modal">
   <div class="modal-content">
     <h2>Keranjang Belanja</h2>
@@ -82,7 +92,7 @@
   </div>
 </div>
 
-<!-- Login Modal -->
+<!-- LOGIN MODAL -->
 <div id="login-modal" class="modal">
   <div class="modal-content">
     <h2>Login</h2>
