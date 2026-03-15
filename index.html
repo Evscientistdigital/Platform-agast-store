@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agast Store</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header>
+
+<div class="logo">Agast Store</div>
+
+<input type="text" placeholder="Cari motor...">
+
+<div class="menu">
+
+<button onclick="showLogin()">Login</button>
+
+<button onclick="openCart()">
+🛒 Keranjang (<span id="cart-count">0</span>)
+</button>
+
+</div>
+
+</header>
+
+
+<main>
+
+<h2>Produk Sepeda Motor</h2>
+
+<div class="products">
+
+<div class="card">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Honda_Astrea_Grand.jpg">
+
+<h3>Grand Astrea</h3>
+
+<p class="price">Rp 1.000</p>
+
+<button onclick="addCart('Grand Astrea',1000)">
+Tambah ke Keranjang
+</button>
+
+</div>
+
+
+<div class="card">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Honda_CB100.jpg">
+
+<h3>CB Nyeni Mas E</h3>
+
+<p class="price">Rp 2.000</p>
+
+<button onclick="addCart('CB Nyeni Mas E',2000)">
+Tambah ke Keranjang
+</button>
+
+</div>
+
+</div>
+
+</main>
+
+
+<!-- CART MODAL -->
+
+<div id="cart-modal" class="modal">
+
+<div class="modal-content">
+
+<h2>Keranjang Belanja</h2>
+
+<ul id="cart-items"></ul>
+
+<p>Total: Rp <span id="total"></span></p>
+
+<button onclick="checkout()">Checkout</button>
+
+<button onclick="closeCart()">Tutup</button>
+
+</div>
+
+</div>
+
+
+<!-- LOGIN MODAL -->
+
+<div id="login-modal" class="modal">
+
+<div class="modal-content">
+
+<h2>Login</h2>
+
+<input id="username" placeholder="Username">
+
+<input id="password" type="password" placeholder="Password">
+
+<button onclick="login()">Login</button>
+
+<button onclick="closeLogin()">Tutup</button>
+
+</div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
