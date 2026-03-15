@@ -13,15 +13,17 @@
   <div class="logo-circle">
     <img src="logo.jpg" alt="Agast Store Logo">
   </div>
+
   <input type="text" placeholder="Cari motor..." class="search">
+
   <div class="menu">
+    <div class="hamburger-inline" onclick="toggleSidebar()">&#9776;</div>
     <button class="btn login-btn" onclick="showLogin()">Login</button>
-    <button class="btn cart-btn" id="cart-button" onclick="openCart()">🛒 <span id="cart-count">0</span></button>
+    <button class="btn cart-btn" onclick="openCart()">🛒 <span id="cart-count">0</span></button>
   </div>
 </header>
 
-<!-- Hamburger Sidebar -->
-<div class="sidebar-hamburger" onclick="toggleSidebar()">&#9776;</div>
+<!-- Sidebar -->
 <aside class="sidebar-panel" id="sidebar-panel">
   <h3>Menu</h3>
   <ul class="sidebar-menu">
@@ -53,7 +55,7 @@
   </div>
 </aside>
 
-<!-- Main Content -->
+<!-- Main -->
 <main>
   <section class="hero">
     <h1>Selamat Datang di Agast Store</h1>
@@ -64,16 +66,15 @@
     <h2>Produk Sepeda Motor</h2>
     <div class="products">
       <div class="card">
-        <img src="Honda_Astrea_Grand.jpg" alt="Honda Astrea Grand">
+        <img src="Honda_Astrea_Grand.jpg" alt="Grand Astrea">
         <div class="card-info">
           <h3>Grand Astrea</h3>
           <p class="price">Rp 1.000</p>
           <button class="btn add-cart-btn" onclick="addCart('Grand Astrea',1000)">Tambah ke Keranjang</button>
         </div>
       </div>
-
       <div class="card">
-        <img src="Honda_CB100.jpg" alt="Honda CB100">
+        <img src="Honda_CB100.jpg" alt="CB Nyeni Mas E">
         <div class="card-info">
           <h3>CB Nyeni Mas E</h3>
           <p class="price">Rp 2.000</p>
@@ -84,7 +85,7 @@
   </section>
 </main>
 
-<!-- CART MODAL -->
+<!-- Modal Keranjang -->
 <div id="cart-modal" class="modal">
   <div class="modal-content">
     <h2>Keranjang Belanja</h2>
@@ -95,7 +96,7 @@
   </div>
 </div>
 
-<!-- LOGIN MODAL -->
+<!-- Modal Login -->
 <div id="login-modal" class="modal">
   <div class="modal-content">
     <h2>Login</h2>
